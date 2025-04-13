@@ -9,4 +9,10 @@ Termux için wifi analiz aracı.
 
 `pip install rich`
 
+`pkg install termux-api`
+
+`termux-setup-storage`
+
+`termux-wifi-enable true`
+
 `python wifi.py`
