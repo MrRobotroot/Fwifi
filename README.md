@@ -6,6 +6,6 @@ Termux için wifi analiz aracı.
 
 `cd Fwifi`
 
-`pip install -r requirements.txt`
+`pip install rich`
 
 `python wifi.py`
