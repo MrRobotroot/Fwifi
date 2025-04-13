@@ -1,0 +1,4 @@
+pip install rich
+pkg install termux-api
+termux-setup-storage
+termux-wifi-enable true
