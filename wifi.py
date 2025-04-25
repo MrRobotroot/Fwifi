@@ -7,7 +7,7 @@ from rich.table import Table
 
 console = Console()
 
-# 🎨 FWİFİ Banner
+
 def show_banner():
     banner_text = Text("""
    _____      ______________
@@ -23,7 +23,7 @@ def show_banner():
     console.print(panel)
 
 
-# 📡 Termux'tan Wi-Fi Ağı Bilgisi Al
+
 def get_wifi_info():
     try:
         result = subprocess.run(["termux-wifi-scaninfo"], capture_output=True, text=True)
@@ -35,7 +35,6 @@ def get_wifi_info():
         console.print(f"[bold red]Hata:[/bold red] {e}")
         return []
 
-# 📊 Tabloda Wi-Fi Ağlarını Göster
 def display_wifi_networks(networks):
     table = Table(title="📡 Yakındaki Wi-Fi Ağları")
 
@@ -56,7 +55,7 @@ def display_wifi_networks(networks):
 
     console.print(table)
 
-# 🚀 Ana Fonksiyon
+
 if __name__ == "__main__":
     show_banner()
     console.print("[bold blue]🔍 Wi-Fi ağları taranıyor...[/bold blue]")
